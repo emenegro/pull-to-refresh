@@ -121,11 +121,12 @@ CGFloat const kAnimationDuration = 0.2f;
     [UIView animateWithDuration:(animated ? kAnimationDuration : 0.0f) animations:^{
         
         [table_ setContentInset:UIEdgeInsetsZero];
-    }];
     
-    [pullToRefreshView_ setLastUpdateDate:[NSDate date]];
-    
-    [pullToRefreshView_ changeStateOfControl:MNMPullToRefreshViewStateIdle withOffset:CGFLOAT_MAX];
+    } completion:^(BOOL finished) {
+        
+        [pullToRefreshView_ setLastUpdateDate:[NSDate date]];
+        [pullToRefreshView_ changeStateOfControl:MNMPullToRefreshViewStateIdle withOffset:CGFLOAT_MAX];
+    }];    
 }
 
 #pragma mark -

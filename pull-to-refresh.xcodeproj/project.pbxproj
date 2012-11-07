@@ -50,6 +50,7 @@
 		3AA2E0F41649804F0060F687 /* MNMPullToRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMPullToRefreshView.m; sourceTree = "<group>"; };
 		3AA2E0FE164982850060F687 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3AA2E0FF164982850060F687 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		579165BB164A5BBE00C52479 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		3AA2E0B816497FA10060F687 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				579165BB164A5BBE00C52479 /* QuartzCore.framework */,
 				3AA2E0B916497FA10060F687 /* UIKit.framework */,
 				3AA2E0BB16497FA10060F687 /* Foundation.framework */,
 				3AA2E0BD16497FA10060F687 /* CoreGraphics.framework */,
@@ -335,6 +337,7 @@
 				3AA2E0DB16497FA10060F687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

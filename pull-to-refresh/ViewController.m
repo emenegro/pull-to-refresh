@@ -189,7 +189,7 @@
     
     reloads_++;
     
-    [self performSelector:@selector(loadTable) withObject:nil afterDelay:5.0f];
+    [self performSelector:@selector(loadTable) withObject:nil afterDelay:1.0f];
 }
 
 @end
