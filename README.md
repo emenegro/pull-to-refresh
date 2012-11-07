@@ -11,7 +11,9 @@ Installation instructions:
 
 2) In your UIViewController class, create a 'MNMPullToRefreshManager' to link an 'UITableView' and the 'MNMPullToRefreshView'. Use a sentence like this:
 
-       pullToRefreshManager_ = [[MNMPullToRefreshManager alloc] initWithPullToRefreshViewHeight:60.0f tableView:table_ withClient:self];
+       pullToRefreshManager_ = [[MNMPullToRefreshManager alloc] initWithPullToRefreshViewHeight:60.0f 
+       																				  tableView:table_ 
+       																				 withClient:self];
     
 3) Implement 'MNMPullToRefreshManagerClient' selectors on your UIViewController in order to inform to delegate about the correct offset of the table
 
