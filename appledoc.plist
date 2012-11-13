@@ -21,7 +21,7 @@
     <key>--no-repeat-first-par</key>
     <true/>
     <key>--output</key>
-    <string>/tmp</string>
+    <string>/help</string>
     <key>--create-docset</key>
     <true/>
     <key>--install-docset</key>
