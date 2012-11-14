@@ -23,12 +23,12 @@
 
 #import "MNMPullToRefreshView.h"
 
-/**
+/*
  * Defines the localized strings table
  */
 #define MNM_PTR_LOCALIZED_STRINGS_TABLE                                 @"MNMPullToRefresh"
 
-/**
+/*
  * Texts to show in different states
  */
 #define TXT_MNM_PTR_PULL                                                NSLocalizedStringFromTable(@"TXT_MNM_PTR_PULL", MNM_PTR_LOCALIZED_STRINGS_TABLE, nil)
@@ -36,50 +36,50 @@
 #define TXT_MNM_PTR_LOADING                                             NSLocalizedStringFromTable(@"TXT_MNM_PTR_LOADING", MNM_PTR_LOCALIZED_STRINGS_TABLE, nil)
 #define TXT_MNM_PRT_LAST_UPDATE_FORMAT                                  NSLocalizedStringFromTable(@"TXT_MNM_PRT_LAST_UPDATE_FORMAT", MNM_PTR_LOCALIZED_STRINGS_TABLE, nil)
 
-/**
+/*
  * Defines icon image
  */
 #define MNM_PTR_ICON_IMAGE                                              @"MNMPullToRefreshIcon.png"
 
 @interface MNMPullToRefreshView()
 
-/**
- * View that contains all controls
+/*
+ * View that contains all controls.
  */
 @property (nonatomic, readwrite, strong) UIView *containerView;
 
-/**
- * Image with the icon that changes with states
+/*
+ * Image view of the icon.
  */
 @property (nonatomic, readwrite, strong) UIImageView *iconImageView;
 
-/**
- * Activiry indicator to show while loading
+/*
+ * Activity indicator to show while loading (hiding the icon).
  */
 @property (nonatomic, readwrite, strong) UIActivityIndicatorView *loadingActivityIndicator;
 
-/**
- * Label to set state message
+/*
+ * Label to set state message.
  */
 @property (nonatomic, readwrite, strong) UILabel *topLabel;
 
-/**
- * Last update label
+/*
+ * Label to set last update message.
  */
 @property (nonatomic, readwrite, strong) UILabel *bottomLabel;
 
-/**
- * Current state of the control
+/*
+ * Current state of the control.
  */
 @property (nonatomic, readwrite, assign) MNMPullToRefreshViewState state;
 
-/**
- * YES to apply rotation to the icon while view is in MNMPullToRefreshViewStatePull state
+/*
+ * YES to apply rotation to the icon while view is in `MNMPullToRefreshViewStatePull` state.
  */
 @property (nonatomic, readwrite, assign) BOOL rotateIconWhileBecomingVisible;
 
-/**
- * Date formatter
+/*
+ * Date formatter to show the last update message in the correct format.
  */
 @property (nonatomic, readwrite, strong) NSDateFormatter *dateFormatter;
 
@@ -102,7 +102,7 @@
 #pragma mark -
 #pragma mark Initialization
 
-/**
+/*
  * Initializes and returns a newly allocated view object with the specified frame rectangle.
  *
  * @param frame The frame rectangle for the view, measured in points.
@@ -172,7 +172,7 @@
 #pragma mark -
 #pragma mark Visuals
 
-/**
+/*
  * Lays out subviews.
  */
 - (void)layoutSubviews {

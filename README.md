@@ -4,7 +4,7 @@ This solution has its basis on the Mediator design pattern (http://en.wikipedia.
 
 In order to maintain this decoupling, there is no 'UITableView' subclass, allowing developers to add this behavior as an aggregate of its own subclasses of 'UITableView' without creating an intermediate class or adding directly in the UIViewController that manages table delegate and data source.
 
-Installation instructions:
+Installation instructions
 =========================
 
 1) Copy the whole 'MNMPullToRefresh' folder into your project
@@ -18,3 +18,8 @@ Installation instructions:
 3) Implement 'MNMPullToRefreshManagerClient' selectors on your UIViewController in order to inform to delegate about the correct offset of the table
 
 4) You can see this usage in 'ViewController' classes.
+
+Documentation
+=============
+
+1) Execute 'appledoc appledoc.plist' in the root of the project path to generate documentation. 

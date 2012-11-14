@@ -28,18 +28,18 @@ CGFloat const kAnimationDuration = 0.2f;
 
 @interface MNMPullToRefreshManager()
 
-/**
- * Pull-to-refresh view
+/*
+ * The pull-to-refresh view to add to the top of the table.
  */
 @property (nonatomic, readwrite, strong) MNMPullToRefreshView *pullToRefreshView;
 
-/**
- * Table view in which PTR view will be added
+/*
+ * Table view in which pull to refresh view will be added.
  */
 @property (nonatomic, readwrite, weak) UITableView *table;
 
-/**
- * Client object that observes changes in the PTR
+/*
+ * Client object that observes changes in the pull-to-refresh.
  */
 @property (nonatomic, readwrite, weak) id<MNMPullToRefreshManagerClient> client;
 

@@ -7,13 +7,8 @@
     <array>
         <string>pull-to-refresh/MNMPullToRefresh</string>
     </array>
-    <key>--ignore</key>
-    <array>
-        <string>Resources</string>
-        <string>zxing</string>
-    </array>
     <key>--project-name</key>
-    <string>pull-to-refresh</string>
+    <string>MNMPullToRefresh</string>
     <key>--project-company</key>
     <string>Mario Negro</string>
     <key>--company-id</key>
@@ -21,7 +16,7 @@
     <key>--no-repeat-first-par</key>
     <true/>
     <key>--output</key>
-    <string>/help</string>
+    <string>.</string>
     <key>--create-docset</key>
     <true/>
     <key>--install-docset</key>
