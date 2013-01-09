@@ -24,7 +24,7 @@
 #import "MNMPullToRefreshManager.h"
 #import "MNMPullToRefreshView.h"
 
-CGFloat const kAnimationDuration = 0.2f;
+static CGFloat const kAnimationDuration = 0.2f;
 
 @interface MNMPullToRefreshManager()
 
