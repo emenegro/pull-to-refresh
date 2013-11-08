@@ -23,7 +23,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class MNMPullToRefreshView;
+
 @class MNMPullToRefreshManager;
 
 /**
