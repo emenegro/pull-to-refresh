@@ -1,3 +1,5 @@
+**UPDATE**: this project does not have support, instead use the iOS built-in solution since iOS 6, [UIRefreshControl](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIRefreshControl_class/).
+
 MNMPullToRefresh is a solution to add pull-to-refresh feature to the top of an UITableView.
 
 This solution has its basis on the Mediator design pattern (http://en.wikipedia.org/wiki/Mediator_pattern). 'MNMPullToRefreshManager' acts as a Mediator between the pull-to-refresh view and its container table view, decoupling the view and the scroll management.
